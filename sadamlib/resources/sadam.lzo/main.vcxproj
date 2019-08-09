@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>sadam.lzo</ProjectName>
+    <ProjectGuid>{73069FC3-D989-47DB-B15F-625703EED4DA}</ProjectGuid>
+    <RootNamespace>dummy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+    <Import Project="..\vcconfig.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateTypeLibrary>false</GenerateTypeLibrary>
+      <TypeLibraryName>
+      </TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <ClCompile />
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>lzo\include;..\sadam.stream;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\MaxSDK\c74support\max-includes\common\commonsyms.c" />
+    <ClCompile Include="..\..\..\MaxSDK\c74support\max-includes\common\dllmain_win.c" />
+    <ClCompile Include="lzo\src\lzo1.c" />
+    <ClCompile Include="lzo\src\lzo1a.c" />
+    <ClCompile Include="lzo\src\lzo1a_99.c" />
+    <ClCompile Include="lzo\src\lzo1b_1.c" />
+    <ClCompile Include="lzo\src\lzo1b_2.c" />
+    <ClCompile Include="lzo\src\lzo1b_3.c" />
+    <ClCompile Include="lzo\src\lzo1b_4.c" />
+    <ClCompile Include="lzo\src\lzo1b_5.c" />
+    <ClCompile Include="lzo\src\lzo1b_6.c" />
+    <ClCompile Include="lzo\src\lzo1b_7.c" />
+    <ClCompile Include="lzo\src\lzo1b_8.c" />
+    <ClCompile Include="lzo\src\lzo1b_9.c" />
+    <ClCompile Include="lzo\src\lzo1b_99.c" />
+    <ClCompile Include="lzo\src\lzo1b_9x.c" />
+    <ClCompile Include="lzo\src\lzo1b_cc.c" />
+    <ClCompile Include="lzo\src\lzo1b_d1.c" />
+    <ClCompile Include="lzo\src\lzo1b_d2.c" />
+    <ClCompile Include="lzo\src\lzo1b_rr.c" />
+    <ClCompile Include="lzo\src\lzo1b_xx.c" />
+    <ClCompile Include="lzo\src\lzo1c_1.c" />
+    <ClCompile Include="lzo\src\lzo1c_2.c" />
+    <ClCompile Include="lzo\src\lzo1c_3.c" />
+    <ClCompile Include="lzo\src\lzo1c_4.c" />
+    <ClCompile Include="lzo\src\lzo1c_5.c" />
+    <ClCompile Include="lzo\src\lzo1c_6.c" />
+    <ClCompile Include="lzo\src\lzo1c_7.c" />
+    <ClCompile Include="lzo\src\lzo1c_8.c" />
+    <ClCompile Include="lzo\src\lzo1c_9.c" />
+    <ClCompile Include="lzo\src\lzo1c_99.c" />
+    <ClCompile Include="lzo\src\lzo1c_9x.c" />
+    <ClCompile Include="lzo\src\lzo1c_cc.c" />
+    <ClCompile Include="lzo\src\lzo1c_d1.c" />
+    <ClCompile Include="lzo\src\lzo1c_d2.c" />
+    <ClCompile Include="lzo\src\lzo1c_rr.c" />
+    <ClCompile Include="lzo\src\lzo1c_xx.c" />
+    <ClCompile Include="lzo\src\lzo1f_1.c" />
+    <ClCompile Include="lzo\src\lzo1f_9x.c" />
+    <ClCompile Include="lzo\src\lzo1f_d1.c" />
+    <ClCompile Include="lzo\src\lzo1f_d2.c" />
+    <ClCompile Include="lzo\src\lzo1x_1.c" />
+    <ClCompile Include="lzo\src\lzo1x_1k.c" />
+    <ClCompile Include="lzo\src\lzo1x_1l.c" />
+    <ClCompile Include="lzo\src\lzo1x_1o.c" />
+    <ClCompile Include="lzo\src\lzo1x_9x.c" />
+    <ClCompile Include="lzo\src\lzo1x_d1.c" />
+    <ClCompile Include="lzo\src\lzo1x_d2.c" />
+    <ClCompile Include="lzo\src\lzo1x_d3.c" />
+    <ClCompile Include="lzo\src\lzo1x_o.c" />
+    <ClCompile Include="lzo\src\lzo1y_1.c" />
+    <ClCompile Include="lzo\src\lzo1y_9x.c" />
+    <ClCompile Include="lzo\src\lzo1y_d1.c" />
+    <ClCompile Include="lzo\src\lzo1y_d2.c" />
+    <ClCompile Include="lzo\src\lzo1y_d3.c" />
+    <ClCompile Include="lzo\src\lzo1y_o.c" />
+    <ClCompile Include="lzo\src\lzo1z_9x.c" />
+    <ClCompile Include="lzo\src\lzo1z_d1.c" />
+    <ClCompile Include="lzo\src\lzo1z_d2.c" />
+    <ClCompile Include="lzo\src\lzo1z_d3.c" />
+    <ClCompile Include="lzo\src\lzo1_99.c" />
+    <ClCompile Include="lzo\src\lzo2a_9x.c" />
+    <ClCompile Include="lzo\src\lzo2a_d1.c" />
+    <ClCompile Include="lzo\src\lzo2a_d2.c" />
+    <ClCompile Include="lzo\src\lzo_crc.c" />
+    <ClCompile Include="lzo\src\lzo_init.c" />
+    <ClCompile Include="lzo\src\lzo_ptr.c" />
+    <ClCompile Include="lzo\src\lzo_str.c" />
+    <ClCompile Include="lzo\src\lzo_util.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\sadam.stream\sadam.stream.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
