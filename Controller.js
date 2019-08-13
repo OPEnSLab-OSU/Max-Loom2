@@ -10,6 +10,7 @@ var UDP_send_port_offset = 9000
 
 var log = false
 var instance = 0
+var label = ""
 
 var has_replied_ip = false
 
@@ -119,11 +120,12 @@ function enable_log(e)
 function set_instance(i)
 {
 	instance = i
+	label = "[" + instance + "]"
 //	messnamed("outlet_dev_id", instance)
 	
 	var receive_port = UDP_receive_port_offset + instance
 	var send_port = UDP_send_port_offset + instance
-	post("Ports:   Receive =", receive_port, " Send =", send_port, "\n")
+	post(label, "Ports:   Receive =", receive_port, " Send =", send_port, "\n")
 	
 	reset_UI()
 	
@@ -148,7 +150,7 @@ function set_instance(i)
 // Build command to send to device
 function command(argSymbol)
 {
-	post("In cmd: ", argSymbol, "\n")
+	post(label, "Cmd : ", argSymbol, "\n")
 	var args = argSymbol.split(" ")
 	
 	var cmd = {};
@@ -164,10 +166,11 @@ function command(argSymbol)
 		"params":args.slice(2).map( function (val) { return parseInt(val) } )
 	}];
 	
-	//post(JSON.stringify(cmd))
-	//post()
 	
-	outlet(0, JSON.stringify(cmd) );
+//	post(label, JSON.stringify(cmd))
+//	post()
+	
+	outlet(0, JSON.stringify(cmd) )
 }
 
 
@@ -184,7 +187,7 @@ function reset_UI()
 // Don't actually have to provide IP here, it is added automatically to UDP packet
 function set_ip()
 {
-	post("Sending request to set IP\n")
+	post(label, "Sending request to set IP\n")
 	
 	var msg = {
 		"type": "command",

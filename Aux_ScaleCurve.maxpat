@@ -38,6 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 110.0, 621.5, 91.0, 20.0 ],
+					"style" : "",
+					"text" : "Scaled value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.5, 15.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Value to scale (0. - 1.)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 					"bgcolor2" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
@@ -239,7 +263,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 542.0, 387.0, 41.0, 28.0 ],
 					"style" : "",
-					"text" : "18."
+					"text" : "0"
 				}
 
 			}
@@ -1471,27 +1495,27 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Scaled value",
 					"id" : "obj-4",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 284.5, 25.0, 25.0 ],
+					"patching_rect" : [ 76.0, 621.5, 25.0, 25.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Value to scale (0. - 1.)",
 					"id" : "obj-2",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 159.5, 24.0, 25.0, 25.0 ],
+					"patching_rect" : [ 159.5, 15.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 

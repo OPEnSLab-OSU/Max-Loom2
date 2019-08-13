@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2272.0, -401.0, 888.0, 967.0 ],
+		"rect" : [ 34.0, 79.0, 1096.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -262,7 +262,7 @@
 					"id" : "obj-32",
 					"maxclass" : "flonum",
 					"maximum" : 4095.0,
-					"minimum" : 0.0,
+					"minimum" : -4096.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -338,7 +338,8 @@
 					"id" : "obj-144",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 301.666656, 122.0, 72.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "Sensor.js",
@@ -416,7 +417,7 @@
 					"patching_rect" : [ 111.858246, 616.0, 232.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-					"setminmax" : [ 0.0, 4095.0 ],
+					"setminmax" : [ -4096.0, 4095.0 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 					"style" : "",
@@ -551,14 +552,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 7/Library",
+				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "runningAvg.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library",
+				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
