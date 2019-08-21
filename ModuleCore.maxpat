@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 8,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 283.0, 79.0, 847.0, 787.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 2099.0, 79.0, 1067.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 681.25, 161.0, 24.0, 24.0 ],
-					"style" : "",
 					"varname" : "blink_received"
 				}
 
@@ -58,7 +59,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 681.25, 193.0, 82.0, 22.0 ],
-					"style" : "",
 					"text" : "speedlim 500"
 				}
 
@@ -69,8 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.0, 34.666664, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 504.0, 34.666663999999997, 150.0, 20.0 ],
 					"text" : "Bang to Send IP"
 				}
 
@@ -84,8 +83,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 61.666664, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 504.0, 61.666663999999997, 30.0, 30.0 ]
 				}
 
 			}
@@ -96,8 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 177.166656, 62.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 504.0, 177.166655999999989, 62.0, 22.0 ],
 					"text" : "pvar jsobj"
 				}
 
@@ -109,8 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 144.166656, 43.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 504.0, 144.166655999999989, 43.0, 22.0 ],
 					"text" : "set_ip"
 				}
 
@@ -127,11 +123,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 504.0, 109.666664, 52.0, 25.0 ],
+					"patching_rect" : [ 504.0, 109.666663999999997, 52.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 6.5, 48.0, 23.0 ],
 					"rounded" : 20.0,
-					"style" : "",
 					"text" : "Send IP",
 					"textcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -148,8 +143,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 109.666664, 59.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 323.0, 109.666663999999997, 59.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -161,8 +155,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 323.0, 367.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 323.0, 367.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -174,7 +168,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 497.0, 303.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "clear"
 				}
 
@@ -189,10 +182,10 @@
 					"patching_rect" : [ 497.0, 357.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict"
 				}
 
@@ -204,8 +197,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 179.666656, 62.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 323.0, 179.666655999999989, 62.0, 22.0 ],
 					"text" : "pvar jsobj"
 				}
 
@@ -219,14 +211,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 8,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2513.0, 432.0, 813.0, 434.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 1853.0, 513.0, 813.0, 434.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -255,14 +248,13 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-4",
+									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 240.0, 199.0, 109.0, 22.0 ],
-									"style" : "",
-									"text" : "sadam.udpSender",
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 240.0, 129.0, 166.0, 22.0 ],
+									"text" : "mxj net.udp.send @port 9000",
 									"varname" : "udp_send"
 								}
 
@@ -273,8 +265,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 297.0, 113.0, 89.0, 22.0 ],
-									"style" : "",
+									"patching_rect" : [ 297.0, 93.0, 89.0, 22.0 ],
 									"text" : "print UDP_Out"
 								}
 
@@ -289,36 +280,15 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.0, 32.0, 30.0, 30.0 ],
-									"style" : "",
 									"varname" : "to_send"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-25",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "list" ],
-									"patching_rect" : [ 240.0, 165.0, 40.0, 22.0 ],
-									"style" : "",
-									"text" : "atoi"
 								}
 
 							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-25", 0 ]
 								}
 
 							}
@@ -353,8 +323,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -377,11 +347,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p UDP_Out",
 					"varname" : "udp_out_subpatch"
 				}
@@ -395,7 +363,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 383.0, 129.0, 74.0 ],
-					"style" : "",
 					"text" : "Dict version of last incoming data\nController.js keeps its own Js object copy of the data"
 				}
 
@@ -407,8 +374,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 173.666656, 62.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 136.0, 173.666655999999989, 62.0, 22.0 ],
 					"text" : "pvar jsobj"
 				}
 
@@ -420,8 +386,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 144.666656, 111.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 323.0, 144.666655999999989, 111.0, 22.0 ],
 					"text" : "prepend command"
 				}
 
@@ -433,8 +398,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 682.75, 34.666664, 102.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 682.75, 34.666663999999997, 102.0, 22.0 ],
 					"text" : "loadmess Device"
 				}
 
@@ -446,7 +410,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 189.0, 596.0, 106.0, 20.0 ],
-					"style" : "",
 					"text" : "Json Out"
 				}
 
@@ -459,8 +422,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 559.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 189.0, 559.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -471,8 +433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 144.666656, 125.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 136.0, 144.666655999999989, 125.0, 22.0 ],
 					"text" : "prepend set_instance"
 				}
 
@@ -483,8 +444,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 136.0, 205.666656, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 136.0, 205.666655999999989, 150.0, 20.0 ],
 					"text" : "Device to Monitor"
 				}
 
@@ -499,10 +459,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 109.666664, 52.0, 23.0 ],
+					"patching_rect" : [ 136.0, 109.666663999999997, 52.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 6.5, 40.0, 23.0 ],
-					"style" : ""
+					"presentation_rect" : [ 6.0, 6.5, 40.0, 23.0 ]
 				}
 
 			}
@@ -526,10 +485,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 620.25, 78.166664, 81.5, 22.0 ],
+					"patching_rect" : [ 620.25, 78.166663999999997, 81.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.266647, 6.5, 73.46669, 22.0 ],
-					"style" : "",
+					"presentation_rect" : [ 86.266647000000006, 6.5, 73.46669, 22.0 ],
 					"text" : "Device",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -544,8 +502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 887.199951, 110.0, 64.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 887.199951000000056, 110.0, 64.0, 22.0 ],
 					"text" : "pvar jsobj"
 				}
 
@@ -557,8 +514,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 887.199951, 75.0, 116.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 887.199951000000056, 75.0, 116.0, 22.0 ],
 					"text" : "prepend enable_log"
 				}
 
@@ -569,8 +525,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 497.0, 390.0, 157.0, 160.0 ],
-					"style" : ""
+					"patching_rect" : [ 497.0, 390.0, 157.0, 160.0 ]
 				}
 
 			}
@@ -584,10 +539,10 @@
 					"patching_rect" : [ 342.5, 333.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict Data",
 					"varname" : "data_dict"
 				}
@@ -607,7 +562,6 @@
 						"parameter_enable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "js Controller.js",
 					"varname" : "jsobj"
 				}
@@ -623,14 +577,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 8,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1474.0, 79.0, 934.0, 787.0 ],
+						"classnamespace" : "box",
+						"rect" : [ 1775.0, 133.0, 775.0, 680.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -659,6 +614,21 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 101.0, 60.0, 176.0, 23.0 ],
+									"text" : "mxj net.udp.recv @port 8000",
+									"varname" : "udp_receive"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-29",
 									"linecount" : 2,
 									"maxclass" : "message",
@@ -666,7 +636,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 937.0, 145.0, 57.0, 35.0 ],
-									"style" : "",
 									"text" : "src_port 9567"
 								}
 
@@ -678,7 +647,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 80.25, 489.0, 121.5, 20.0 ],
-									"style" : "",
 									"text" : "Send to JS controller"
 								}
 
@@ -691,7 +659,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 101.0, 263.0, 80.0, 22.0 ],
-									"style" : "",
 									"text" : "prepend json"
 								}
 
@@ -703,7 +670,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 415.0, 312.0, 66.0, 20.0 ],
-									"style" : "",
 									"text" : "Converted"
 								}
 
@@ -714,8 +680,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 312.0, 342.0, 169.0, 167.0 ],
-									"style" : ""
+									"patching_rect" : [ 312.0, 342.0, 185.0, 341.0 ]
 								}
 
 							}
@@ -726,7 +691,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 644.0, 244.0, 94.0, 20.0 ],
-									"style" : "",
 									"text" : "Unconverted"
 								}
 
@@ -739,7 +703,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 101.0, 171.0, 80.0, 22.0 ],
-									"style" : "",
 									"text" : "prepend json"
 								}
 
@@ -752,7 +715,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "dictionary" ],
 									"patching_rect" : [ 312.0, 311.0, 90.0, 22.0 ],
-									"style" : "",
 									"text" : "dict.deserialize"
 								}
 
@@ -770,22 +732,7 @@
 										"parameter_enable" : 0
 									}
 ,
-									"style" : "",
 									"text" : "js Convert_Incoming.js"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "list", "int" ],
-									"patching_rect" : [ 101.0, 48.0, 117.0, 22.0 ],
-									"style" : "",
-									"text" : "sadam.udpReceiver",
-									"varname" : "udp_receive"
 								}
 
 							}
@@ -795,8 +742,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 181.0, 113.0, 79.0, 22.0 ],
-									"style" : "",
+									"patching_rect" : [ 213.0, 106.0, 79.0, 22.0 ],
 									"text" : "print UDP_In"
 								}
 
@@ -807,8 +753,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 545.0, 273.0, 193.0, 236.0 ],
-									"style" : ""
+									"patching_rect" : [ 545.0, 273.0, 193.0, 410.0 ]
 								}
 
 							}
@@ -820,7 +765,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "dictionary" ],
 									"patching_rect" : [ 545.0, 242.0, 90.0, 22.0 ],
-									"style" : "",
 									"text" : "dict.deserialize"
 								}
 
@@ -833,26 +777,28 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 448.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-41",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 101.0, 104.0, 40.0, 22.0 ],
-									"style" : "",
-									"text" : "itoa"
+									"patching_rect" : [ 101.0, 448.0, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-14", 0 ]
@@ -891,31 +837,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
-									"order" : 1,
-									"source" : [ "obj-41", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"order" : 0,
-									"source" : [ "obj-41", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-41", 0 ],
-									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -950,8 +873,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -974,11 +897,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p UDP_In",
 					"varname" : "udp_in_subpatch"
 				}
@@ -990,8 +911,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.0, 78.166664, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 711.0, 78.166663999999997, 150.0, 20.0 ],
 					"text" : "Device Name"
 				}
 
@@ -1009,9 +929,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 887.199951, 34.666664, 53.200012, 26.0 ],
+					"patching_rect" : [ 887.199951000000056, 34.666663999999997, 53.200012000000001, 26.0 ],
 					"rounded" : 15.0,
-					"style" : "",
 					"text" : "Log",
 					"texton" : "Log",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1033,10 +952,9 @@
 					"oncolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 681.25, 225.666656, 24.0, 24.0 ],
+					"patching_rect" : [ 681.25, 225.666655999999989, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.000004, 8.5, 19.0, 19.0 ],
-					"style" : ""
+					"presentation_rect" : [ 48.000003999999997, 8.5, 19.0, 19.0 ]
 				}
 
 			}
@@ -1050,13 +968,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 681.25, 111.666656, 20.5, 22.0 ],
+					"patching_rect" : [ 681.25, 111.666656000000003, 20.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 68.666664, 6.5, 10.666667, 23.0 ],
-					"setminmax" : [ 3.2, 4.2 ],
+					"presentation_rect" : [ 68.666663999999997, 6.5, 10.666667, 23.0 ],
+					"setminmax" : [ 3.200000047683716, 4.199999809265137 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.439, 0.749, 0.255, 1.0 ],
-					"style" : "",
 					"varname" : "battery_indicator"
 				}
 
@@ -1072,11 +989,10 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.25, 34.666664, 49.5, 26.399948 ],
+					"patching_rect" : [ 28.25, 34.666663999999997, 49.5, 26.399947999999998 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 220.0, 36.0 ],
 					"proportion" : 0.39,
-					"style" : "",
 					"varname" : "background"
 				}
 
@@ -1089,8 +1005,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 342.5, 559.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 342.5, 559.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1103,8 +1018,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 61.666664, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 323.0, 61.666663999999997, 30.0, 30.0 ]
 				}
 
 			}
@@ -1117,8 +1031,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 61.666664, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 136.0, 61.666663999999997, 30.0, 30.0 ]
 				}
 
 			}
@@ -1129,8 +1042,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 947.0, 34.666664, 94.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 947.0, 34.666663999999997, 94.0, 33.0 ],
 					"text" : "Display to Console Toggle"
 				}
 
@@ -1141,8 +1053,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 716.75, 225.666656, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 716.75, 225.666655999999989, 150.0, 20.0 ],
 					"text" : "Transmitting Indicator"
 				}
 
@@ -1153,8 +1064,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.0, 111.666656, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 711.0, 111.666656000000003, 150.0, 20.0 ],
 					"text" : "Battery Level Indicator"
 				}
 
@@ -1165,8 +1075,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 323.0, 34.666664, 119.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 323.0, 34.666663999999997, 119.0, 20.0 ],
 					"text" : "JS Commands In"
 				}
 
@@ -1178,7 +1087,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 342.5, 596.0, 131.0, 20.0 ],
-					"style" : "",
 					"text" : "Data Dictionary Out"
 				}
 
@@ -1189,8 +1097,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 136.0, 34.666664, 78.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 136.0, 34.666663999999997, 78.0, 20.0 ],
 					"text" : "Device ID In"
 				}
 
@@ -1357,25 +1264,17 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Convert_Incoming.js",
-				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
+				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Controller.js",
-				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
+				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "sadam.udpReceiver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sadam.udpSender.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
@@ -1409,8 +1308,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

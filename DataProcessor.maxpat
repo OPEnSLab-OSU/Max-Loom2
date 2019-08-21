@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 239.0, 79.0, 810.0, 787.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 34.0, 79.0, 1119.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,14 +60,14 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "Patch_Generator.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
+				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 7/Library/_DataProcessorPlugins",
+				"bootpath" : "~/Documents/Max 8/Library",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

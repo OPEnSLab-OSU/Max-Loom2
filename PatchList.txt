@@ -7,6 +7,7 @@ Relay
 Servo
 Stepper
 SetInterval
+SelectSD_Config
 Aux_RangeSetter
 Aux_ScaleCurve
 Aux_ScaleLinear
