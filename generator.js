@@ -97,8 +97,8 @@ function generate(patchName)
 			"@name", patchName+".maxpat",
 			"@border", "0",
 			"@clickthrough", "1",
-			"@orderfront", "1"
-//			"@embed", "1"
+			"@orderfront", "1",
+			"@embed", "1"
 //			"@presentation", "1"
 		)
 		

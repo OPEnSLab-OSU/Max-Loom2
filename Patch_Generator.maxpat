@@ -116,7 +116,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+					"bgcolor" : [ 0.164705882352941, 0.176470588235294, 0.192156862745098, 1.0 ],
 					"bgoncolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"blinktime" : 600,
 					"id" : "obj-14",
@@ -139,7 +139,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+					"bgcolor" : [ 0.164705882352941, 0.176470588235294, 0.192156862745098, 1.0 ],
 					"bgoncolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"blinktime" : 600,
 					"id" : "obj-10",
@@ -164,7 +164,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-4",
-					"items" : [ "ModuleCore", ",", "GeneralViewer", ",", "Sensor", ",", "PositionVisualizer", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "SelectSD_Config", ",", "Aux_RangeSetter", ",", "Aux_ScaleCurve", ",", "Aux_ScaleLinear", ",", "Aux_Smooth", ",", "Aux_Threshold" ],
+					"items" : [ "ModuleCore", ",", "GeneralViewer", ",", "Sensor", ",", "PositionVisualizer", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "SelectSD_Config", ",", "Aux_RangeSetter", ",", "Aux_ScaleCurve", ",", "Aux_ScaleLinear", ",", "Aux_Smooth", ",", "Aux_Threshold", ",", "Aux_pH" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -202,13 +202,12 @@
 , 			{
 				"box" : 				{
 					"angle" : 0.0,
+					"bgcolor" : [ 0.325490196078431, 0.345098039215686, 0.372549019607843, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
-					"grad1" : [ 0.537255, 0.537255, 0.537255, 1.0 ],
-					"grad2" : [ 0.258824, 0.258824, 0.258824, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 48.343994000000002, 60.5, 37.5 ],
@@ -308,8 +307,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
