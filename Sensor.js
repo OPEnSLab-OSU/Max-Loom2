@@ -5,14 +5,45 @@ outlets = 0;
 
 var data = {};
 
+var last_device_number = -1
+var menu_updated = false	
+
+
 // Upon new data
 function json(j)
 {
 	data = JSON.parse(j); // js object
 	
-	update_UI_module_menu();
-	update_UI_parameter_menu();
-	update_UI_parameter_value();
+	// Check device instance number
+	if (menu_updated && device_changed() ) {
+		menu_updated = false
+		this.patcher.getnamed("gate_open").message("bang")
+		post("Resetting")
+		post()
+		
+		var param_menu = this.patcher.getnamed("parameter_selection");
+		var module_menu = this.patcher.getnamed("module_selection");
+		
+		param_menu.clear()
+		module_menu.clear()
+	}
+	
+	if (!menu_updated) {
+		update_UI_module_menu()
+		update_UI_parameter_menu()
+		
+		if (data["ID"] && data["ID"]["instance"]) {
+			last_device_number = data["ID"]["instance"]
+			post("Instance", last_device_number)
+			post()
+		}
+		
+		menu_updated = true
+		
+		load_saved_selection()
+	}
+
+	update_UI_parameter_value()	
 }
 
 
@@ -79,6 +110,17 @@ function update_UI_parameter_value()
 function reset_to_default()
 {
 	
+}
+
+function device_changed()
+{
+	return !(data["ID"] && data["ID"]["instance"] && data["ID"]["instance"] == last_device_number )
+		
+}
+
+function load_saved_selection()
+{
+	this.patcher.getnamed("load_saved").message("bang")	
 }
 
 

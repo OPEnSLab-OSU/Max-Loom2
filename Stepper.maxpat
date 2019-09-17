@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 965.0, 787.0 ],
+		"rect" : [ 2198.0, 168.0, 965.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -263,7 +263,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 534.799987999999985, 409.0, 150.0, 47.0 ],
+					"patching_rect" : [ 660.799987999999985, 383.0, 150.0, 47.0 ],
 					"text" : "To be used ot indicate stepper is done with command"
 				}
 
@@ -281,7 +281,7 @@
 					"oncolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 534.799987999999985, 370.0, 24.0, 24.0 ],
+					"patching_rect" : [ 660.799987999999985, 344.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 91.863060000000004, 135.729751999999991, 24.553604, 24.553604 ]
 				}
@@ -307,7 +307,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 570.799987999999985, 370.0, 73.0, 21.0 ],
+					"patching_rect" : [ 696.799987999999985, 344.0, 73.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.274051, 137.506545999999986, 60.333331999999999, 21.0 ],
 					"text" : "Complete",
@@ -475,12 +475,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 4,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.533263999999974, 200.5, 150.0, 60.0 ],
-					"text" : "Build command\n- Module name\n- Function character\n- List of params"
+					"patching_rect" : [ 305.533263999999974, 469.0, 341.533386000000007, 114.0 ],
+					"text" : "Build command (calls Loom_Stepper::move_steps() )\n- Module name (\"Stepper\")\n- Function character ('s')\n- List of params\n    - motor number\n    - steps\n    - speed\n    - clockwise"
 				}
 
 			}
@@ -802,8 +802,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

@@ -135,18 +135,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 401.800018000000023, 221.333312999999976, 60.0 ],
-					"text" : "Is routed to driver method in\nLoom_Neopixel.cpp::dispatch()\n\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -335,12 +323,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 4,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.533264000000003, 269.300018000000023, 150.0, 60.0 ],
-					"text" : "Build command\n- Module name\n- Function character\n- List of params"
+					"patching_rect" : [ 360.25, 426.0, 325.25, 127.0 ],
+					"text" : "Build command (calls Loom_Neopixel.::set_color() )\n- Module name (\"Neopixel\")\n- Function character ('s')\n- List of params\n    - port number\n    - number in chain\n    - red value\n    - green value\n    - blue value"
 				}
 
 			}

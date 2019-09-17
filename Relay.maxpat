@@ -296,12 +296,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 535.0, 260.199981999999977, 150.0, 60.0 ],
-					"text" : "Build command\n- Module name\n- Function character\n- List of params"
+					"patching_rect" : [ 480.0, 403.199981999999977, 247.0, 74.0 ],
+					"text" : "Build command (calls Loom_Relay::set() )\n- Module name (\"Relay\")\n- Function character ('s')\n- List of params\n    - state (0 off, 1 on)"
 				}
 
 			}

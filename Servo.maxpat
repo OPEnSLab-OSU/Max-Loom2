@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 965.0, 787.0 ],
+		"rect" : [ 2378.0, 223.0, 965.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -281,12 +281,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.533263999999974, 246.5, 150.0, 60.0 ],
-					"text" : "Build command\n- Module name\n- Function character\n- List of params"
+					"patching_rect" : [ 370.533263999999974, 377.0, 298.999999999999943, 87.0 ],
+					"text" : "Build command (calls Loom_Servo::set_degree()\n- Module name (\"Servo\")\n- Function character ('s')\n- List of params\n    - servo number\n    - degree"
 				}
 
 			}
@@ -613,8 +613,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
