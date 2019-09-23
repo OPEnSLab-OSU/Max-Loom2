@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2168.0, 136.0, 1096.0, 787.0 ],
+		"rect" : [ 550.0, 136.0, 1096.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -467,7 +467,8 @@
 					"id" : "obj-144",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 301.666655999999989, 122.0, 72.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "Sensor.js",
