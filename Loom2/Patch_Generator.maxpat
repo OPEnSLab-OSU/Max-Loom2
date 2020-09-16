@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1988.0, 79.0, 1175.0, 967.0 ],
+		"rect" : [ 0.0, 79.0, 1001.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -164,7 +164,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-4",
-					"items" : [ "ModuleCore", ",", "GeneralViewer", ",", "Sensor", ",", "PositionVisualizer", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "SelectSD_Config", ",", "Aux_RangeSetter", ",", "Aux_ScaleCurve", ",", "Aux_ScaleLinear", ",", "Aux_Smooth", ",", "Aux_Threshold", ",", "Aux_pH" ],
+					"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "--Process--", ",", "ChordDegree", ",", "Concatenate", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleLinear", ",", "Smooth", ",", "Threshold", ",", "ScaleDegree", ",", "Sequencer", ",", "Spring", ",", "TapTempo", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -270,7 +270,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 8/Library",
+				"bootpath" : "~/Documents/Max 8/Library/Max-Loom2",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

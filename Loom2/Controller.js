@@ -163,7 +163,7 @@ function command(argSymbol)
 	cmd["commands"] = [{
 		"module":args[0],
 		"func":args[1].charCodeAt(0),
-		"params":args.slice(2).map( function (val) { return parseInt(val) ? parseInt(val) : val } )
+		"params":args.slice(2).map( function (val) { return parseInt(val) != NaN ? parseInt(val) : val } )
 	}];
 	
 	post(JSON.stringify(cmd));

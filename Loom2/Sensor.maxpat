@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 550.0, 136.0, 1096.0, 787.0 ],
+		"rect" : [ 310.0, 136.0, 718.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -395,7 +395,7 @@
 					"format" : 6,
 					"id" : "obj-32",
 					"maxclass" : "flonum",
-					"maximum" : 4095.0,
+					"maximum" : 65535.0,
 					"minimum" : -4096.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -782,14 +782,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 8/Library",
+				"bootpath" : "~/Documents/Max 8/Library/Max-Loom2",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "runningAvg.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library",
+				"bootpath" : "~/Documents/Max 8/Library/Max-Loom2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
