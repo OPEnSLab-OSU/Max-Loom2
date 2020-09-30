@@ -1,7 +1,5 @@
 # Max Documentation
 
-
-
 ## Purpose
 
 * Designed to interface with the Loom Internet of Things Rapid Prototyping framework ([GitHub - OPEnSLab-OSU/Loom: Arduino library for Internet of Things Rapid Prototyping in environmental sensing](https://github.com/OPEnSLab-OSU/Loom))
@@ -19,6 +17,8 @@
   * If using Max 6:
     * [user] / Applications / Max6 / Cycling74 
 
+*Note: most of these the Max Loom files are developed in Max 8, functionality outside of this version may vary*
+
 ### Developer notes:
 * These files should be in the same folder
 * Some functionality (e.g. UDP communication) will only work on Max 8
@@ -33,38 +33,35 @@
 # Patches
 
 * Patches are self-contained blocks with inputs and outputs for commands / data
-##### Inlets are the little circles at the top of a patch, hovering over them will give a description
-##### Outlets are the little circles at the bottom of a patch, hovering over them will give a description
+* Inlets are the little circles at the top of a patch, hovering over them will give a description
+* Outlets are the little circles at the bottom of a patch, hovering over them will give a description
 
 ## General
 
 #### ModuleCore (primary input from Loom device)
-* Can think of as a representation a Loom device (device running Loom software, and enabled with Max interfacing features)
-* *Numbering relation*
-* A number of the patches are intended to be parallels to individual features / components enabled in the config of the Loom device
-
 ##### Description
 
-* 
+* Can think of as a representation a Loom device (device running Loom software, and enabled with Max interfacing features)
+* A number of the patches are intended to be parallels to individual features / components enabled in the config of the Loom device
 
 ##### UI Elements
 
-* Instance number: Enter the device number to connect to (specified in the config file)
-* Data updating: When data is being received, this indicator blinks when data is being received (updates at 500ms interval if data is being received faster than that)
-* Battery indicator: Display the battery level of the connected Loom device
-* Device name: The name of the Loom device as specified in the config file
-* Send IP button: Press to send the IP of the computer running Max to the Loom device. The device will save this and send data to specifically that IP rather than broadcasting data (increases data reliability)
+* `Instance number`: Enter the device number to connect to (specified in the config file)
+* `Data updating`: When data is being received, this indicator blinks when data is being received (updates at 500ms interval if data is being received faster than that)
+* `Battery indicator`: Display the battery level of the connected Loom device
+* `Device name`: The name of the Loom device as specified in the config file
+* `Send IP button`: Press to send the IP of the computer running Max to the Loom device. The device will save this and send data to specifically that IP rather than broadcasting data (increases data reliability)
 
 ##### Inlets
 
-1. Device ID In: change the device to connect to
-2. JS Commands In: Commands from actuator patches to converted to format and send to the Loom device
-3. Bang to Send IP: Input bang signal to send IP to Loom device
+1. `Device ID In`: change the device to connect to
+2. `JS Commands In`: Commands from actuator patches to converted to format and send to the Loom device
+3. `Bang to Send IP`: Input bang signal to send IP to Loom device
 
 ##### Outlets
 
-1. Json Out: Received data in Json format
-2. Data Dictionary Out: Received data in Max dictionary format
+1. `Json Out`: Received data in Json format
+2. `Data Dictionary Out`: Received data in Max dictionary format
 
 
 
@@ -86,8 +83,8 @@
 
 ##### Inlets
 
-1. Data (Json) In: Data in Json format (works with non-Loom data)
-2. Data (Dict) In: Data in Max dictionary format (works with non-Loom data)
+1. `Data (Json) In`: Data in Json format (works with non-Loom data)
+2. `Data (Dict) In`: Data in Max dictionary format (works with non-Loom data)
 
 ##### Outlets
 
@@ -108,7 +105,7 @@
 
 ##### Inlets
 
-1. Data (Json) In
+1. `Data (Json) In`
 
 ##### Outlets
 
@@ -130,8 +127,8 @@
 
 ##### Inlets
 
-1. Data (Json) In: Loom data from ModuleCore
-2. Data (Dict) In: Loom data from ModuleCore
+1. `Data (Json) In`: Loom data from ModuleCore
+2. `Data (Dict) In`: Loom data from ModuleCore
 
 ##### Outlets
 
@@ -160,23 +157,23 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Reset to Defaults
-3. Port Numberl
-4. Neopixel # In Chain
-5. Red Value (0-255)
-6. Green Value (0-255)
-7. Blue Value (0-255)
+1. `Bang to Send`: generate command upon bang 
+2. `Reset to Defaults`
+3. `Port Number`
+4. `Neopixel # In Chain`
+5. `Red Value (0-255)`
+6. `Green Value (0-255)`
+7. `Blue Value (0-255)`
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 ### Relay
 ##### Description
 
 * Set the state of a relay connected to a Loom device
-* Corresponds to Loom ‘Relay’ module
+* Corresponds to Loom `Relay` module
 
 ##### UI Elements
 
@@ -186,12 +183,12 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Set State (1 on, 0 off)
+1. `Bang to Send`: generate command upon bang 
+2. `Set State (1 on, 0 off)`
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 ### Servo
 ##### Description
@@ -206,14 +203,14 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Reset to Defaults
-3. Servo Number: 
-4. Degree
+1. `Bang to Send`: generate command upon bang 
+2. `Reset to Defaults`
+3. `Servo Number` 
+4. `Degree`
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 ### Stepper
 ##### Description
@@ -230,15 +227,15 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Reset to Defaults 
-3. Motor #
-4. Set Speed
-5. Clockwise
+1. `Bang to Send`: generate command upon bang 
+2. `Reset to Defaults` 
+3. `Motor #`
+4. `Set Speed`
+5. `Clockwise`
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 ### SetInterval
 ##### Description
@@ -251,12 +248,12 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Interval (ms): refresh rate of Loom devices
+1. `Bang to Send`: generate command upon bang 
+2. `Interval (ms)`: refresh rate of Loom devices
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 #### SelectSD_Config
 ##### Description
@@ -272,12 +269,12 @@
 
 ##### Inlets
 
-1. Bang to Send: generate command upon bang 
-2. Reset to Defaults
+1. `Bang to Send`: generate command upon bang 
+2. `Reset to Defaults`
 
 ##### Outlets
 
-1. JS Command Out: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
+1. `JS Command Out`: Intended to be connected ‘JS Commands In’ outlet of ‘ModuleCore’
 
 - - - -
 
@@ -291,6 +288,7 @@
     * Subsequent values will use the detected min and max values of the input and map them to the output min and max values, with other values being interpolated within the range
     * Incoming values outside of the learned min and max while ‘Learn’ is disabled will be capped within the range
   * Rescales an incoming data stream of an unknown range into a stream with a specified minimum and maximum range. Range Setter automatically adjusts and compares incoming values based on the least and greatest values it received while in "Learn" mode. 
+
 ##### UI Elements
   * Output ‘Min’ and ‘Max’ range
 * ‘Learn’ toggle: enable and send your min and max value. Then disable to save min/max and disable Learn mode.
@@ -298,10 +296,10 @@
 * History of values
 * Reset button: Clear learned ranged
 ##### Inlets
-1. Incoming Values: stream of values to remap
-2. Save/reset: 1: reset learned values and enable learn mode, 0: disable learn mode, saving learned range
+1. `Incoming Values`: stream of values to remap
+2. `Save/reset`: 1: reset learned values and enable learn mode, 0: disable learn mode, saving learned range
 ##### Outlets
-1. Range adjusted value: stream of values remapped to specified range
+1. `Range adjusted value`: stream of values remapped to specified range
 
 ### Aux_ScaleCurve
 ##### Description
@@ -323,9 +321,9 @@
   * Visualization of function and current input and output values along the curve
   * Histogram of recent values
 ##### Inlets
-  1. Value to Scale: Stream of data (or single value), representing ‘x’ values to specified functions (should be in [0,1])
+  1. `Value to Scale`: Stream of data (or single value), representing ‘x’ values to specified functions (should be in [0,1])
 ##### Outlets
-  1. Scaled Value: Stream of data mapped through the specified equation
+  1. `Scaled Value`: Stream of data mapped through the specified equation
 
 ### Aux_ScaleLinear
 ##### Description
@@ -335,9 +333,9 @@
   * Input Min and Max values
   * Output Min and Max values
 ##### Inlets
-  1. Value to Scale: Input stream of data (or single value) to scale to a different range
+  1. `Value to Scale`: Input stream of data (or single value) to scale to a different range
 ##### Outlets
-  1. Scaled Value: Stream of data remapped to specified range
+  1. `Scaled Value`: Stream of data remapped to specified range
 
 ### Aux_Smooth
 ##### Description
@@ -351,9 +349,9 @@
   * Histogram of recent values:
   * Most recent value
 ##### Inlets
-  1. Value to Smooth: Stream of data to smooth
+  1. `Value to Smooth`: Stream of data to smooth
 ##### Outlets
-  1. Smoothed Value: Stream of data smoothed 
+  1. `Smoothed Value`: Stream of data smoothed 
 
 ### Aux_Threshold
 ##### Description
@@ -426,7 +424,7 @@ Additional patches created before the current design of Loom. Support with Loom 
     * Sorted in terms of inputs, outputs, data modification,  visualization
   * ‘Clear Last Patch’: deletes the most recently generated patch
   * ‘Clear All Patches’: deletes all patches 
-  * Relevant files
+  * Relevant files:
     * Patch_Generator.maxpat
     * PatchList.txt (kept separate so it is easy to modify list as new patches are added
 
@@ -441,10 +439,11 @@ Additional patches created before the current design of Loom. Support with Loom 
 
 * Can ‘Save As’ to create templated
 
-### Notes
-* *Where files might need to be*
+
 
 - - - -
+
+
 
 ## Loom Implementation
 
@@ -453,7 +452,7 @@ Additional patches created before the current design of Loom. Support with Loom 
   * Commands can be generated from actuator patches connected to a ‘ModuleCore’ (or can be manually created strings)
 * Can be run without MaxPub if you only want to receive commands and not send data, reliability may not be as good as with both modules
 * Commands will be routed to ‘MaxSub’ module, which will ‘dispatch’ the command to the corresponding module’s ‘dispatch’ method to act upon it
-* Needs ‘Loom.MaxSub().subscribe();’ in the main loop
+* Needs `Loom.MaxSub().subscribe();` in the main loop
 * Receives on UDP port 9000 + instance number (thus Max sends on this port)
 * Requires an ‘InternetPlat’ module be instantiated
 * When ‘ModuleCore’ is created / ‘Send IP’ is pressed, Max sends out the IP of the computer it is running on to the device of the specified instance number, if such a devices exists and is running ‘MaxSub’ and ‘MaxPub’ modules, the device will set that IP in the ‘MaxPub’ module to have better reliability sending messages 
@@ -464,11 +463,15 @@ Additional patches created before the current design of Loom. Support with Loom 
 * Can be used without MaxSub if you only want to send data, reliability may not be as good as with both modules
 * Sends on UDP port 8000 + instance number (thus Max receives on this port)
 * Requires an ‘InternetPlat’ module be instantiated
-* Needs ‘Loom.MaxPub().publish();’ in the main loop
+* Needs `Loom.MaxPub().publish();` in the main loop
   * After measuring and packaging data, this will send the data object/package out to Max
 
 
+
+
 - - - -
+
+
 
 ## Max Implementation
 
@@ -476,48 +479,36 @@ Additional patches created before the current design of Loom. Support with Loom 
 * Represents a Loom devices 
   * Outputs Loom device packaged data
   * Inputs commands to send to Loom device
-* Nearly all of the logic is controlled by ‘Controller.js’ file (the rest is essentially just the UI elements and formatting inputs to send to the Javascript object)
+* Nearly all of the logic is controlled by `Controller.js` file (the rest is essentially just the UI elements and formatting inputs to send to the Javascript object)
 
 #### Controller.js Functions
-* json(j)
+* `json(j)`
   * Parse data the has been received via UDP in the `UDP_In` patcher (which does some initial preprocessing / filtering of non-data; see `Convert_Incoming.js` for details)
   * Calls function to update UI with new data
   * Extract the IP address of the Loom device, and respond with command to MaxPub module to have Loom device set the remote IP to be the IP of the computer running Max
   * Update the `Data` dict object
   * Forward the data json out
-* update_UI()
+* `update_UI()`
   * Calls functions to update UI elements for battery, device name, blink messages received
-* update_UI_battery()
+* `update_UI_battery()`
   * Update the battery UI element (named `battery_indicator`) with the last received battery voltage
-* update_UI_device_name()
+* `update_UI_device_name()`
   * Update the device name UI element (named `device_name`) with last received device name 
   * Max only specifies the device to connect to by ID number, it does not know about the name until it receives data, which is displayed for better human readability
-* update_UI_blink_received()
+* `update_UI_blink_received()`
   * Update the UI LED that blinks when data is received
-* enable_log(e)
+* `enable_log(e)`
   * Enable or disable logging to the Max console
-* set_instance(i)
+* `set_instance(i)`
   * Reset the UI of current device info
   * Set the UDP elements to receive / send on the updated ports
-* command(argSymbol)
+* `command(argSymbol)`
   * Given a symbol (string) of a command, format a message that the MaxSub module will recognize and be able to dispatch
   * Send the json command out to `UDP_Out` to be sent over UDP
-* reset_UI()
+* `reset_UI()`
   * Any UI clearing / resetting that needs to happen when switching devices, for example
-* set_ip()
+* `set_ip()`
   * Create a command to MaxPub module to have Loom device set the remote IP to be the IP of the computer running Max
   * Send the json command out to `UDP_Out` to be sent over UDP
-
-### JS files
-	* 
-
-### Modifying / Creating Patches
-	* 
-
-- - - -
-
-## Troubleshooting
-
-
 
 
