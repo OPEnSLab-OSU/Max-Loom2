@@ -65,7 +65,10 @@ Choose the operating system that matches your computer and download.
 
 ## Download the FTDI VCP drivers (virtual com port)
 [ftdichip.com/drivers/vcp.htm](ftdichip.com/drivers/vcp.htm)
-(make sure to download the executable version)
+
+Don't download the D2xx drivers.
+You only need to download the VCP drivers.
+(make sure to download the executable version for your opperating system)
 
 ## Download Link Tools:
 * From the Max 8 application, look for the menu item > Package manager
