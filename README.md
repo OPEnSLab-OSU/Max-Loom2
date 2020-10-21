@@ -63,6 +63,21 @@ Look for Oracle JDK and click the JDK download link
 Choose the operating system that matches your computer and download.
 [Direct Link](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
 
+## Download the FTDI VCP drivers (virtual com port)
+[ftdichip.com/drivers/vcp.htm](ftdichip.com/drivers/vcp.htm)
+(make sure to download the executable version)
+
+## Download Link Tools:
+* From the Max 8 application, look for the menu item > Package manager
+* Top right corner, type “link” in the search bar
+* Install Link by Cycling ‘74
+
+## reStart and reOpen Max 8:
+* Quit Max, you may need to restart your computer too.
+* Reopen Max8
+
+## Try Things Out:
+On your computer, Open (User) > Documents > Max 8 > Library > Loom2 > _DataProcessor.MPG.maxpat
 
 - - - -
 
