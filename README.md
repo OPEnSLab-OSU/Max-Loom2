@@ -31,8 +31,22 @@
 # Installation Guide
 ## Download Max:
 Go to Cycling 74 and download the version for your operating system.
+
 Open Max 8 Application so the support folders you need to place the support files generate in your Documents folder.
+
 You may want to create an account for authorization
+
+## Download Loom Tools for Max:
+* Go to: [https://github.com/OPEnSLab-OSU/Max-Loom2](https://github.com/OPEnSLab-OSU/Max-Loom2)
+* Click the green button on the right to download the .zip of the repo.
+* Unzip
+Find these three folders:
+* Loom2
+* MPG
+* Optron
+Drag these folders into the following folder on your computer: 
+
+(User) > Documents > Max 8 > Library 
 
 - - - -
 
