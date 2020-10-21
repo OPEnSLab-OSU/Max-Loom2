@@ -24,7 +24,15 @@
 * Some functionality (e.g. UDP communication) will only work on Max 8
 * The Z_ patches may not work or depend on non-default features in Max 8
 
+- - - -
 
+
+
+# Installation Guide
+## Download Max:
+Go to Cycling 74 and download the version for your operating system.
+Open Max 8 Application so the support folders you need to place the support files generate in your Documents folder.
+You may want to create an account for authorization
 
 - - - -
 
