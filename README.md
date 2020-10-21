@@ -40,13 +40,29 @@ You may want to create an account for authorization
 * Go to: [https://github.com/OPEnSLab-OSU/Max-Loom2](https://github.com/OPEnSLab-OSU/Max-Loom2)
 * Click the green button on the right to download the .zip of the repo.
 * Unzip
+
 Find these three folders:
 * Loom2
 * MPG
 * Optron
+
 Drag these folders into the following folder on your computer: 
 
 (User) > Documents > Max 8 > Library 
+
+## Download Java:
+Make sure java is installed, especially if you are a windows user. 
+
+Install Java here. [Java](https://www.java.com/en/download/manual.jsp)
+
+## Download Java Virtual Machine (JDK):
+Even if you installed Java above, you still need to do the following:
+In a google search, type in: "download oracle java"
+Click Java SE Downloads
+Look for Oracle JDK and click the JDK download link 
+Choose the operating system that matches your computer and download.
+[Direct Link](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
+
 
 - - - -
 
