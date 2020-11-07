@@ -159,19 +159,15 @@ function command(argSymbol)
 		"name":"test",
 		"instance":instance
 	}
-	
+
 	cmd["commands"] = [{
 		"module":args[0],
 		"func":args[1].charCodeAt(0),
-		"params":args.slice(2).map( function (val) { return parseInt(val) != NaN ? parseInt(val) : val } )
+		"params":args.slice(2).map( function (val) { return !isNaN(parseInt(val)) ? parseInt(val) : val } )
 	}];
 	
 	post(JSON.stringify(cmd));
 	post()
-	
-	
-//	post(label, JSON.stringify(cmd))
-//	post()
 	
 	outlet(0, JSON.stringify(cmd) )
 }
