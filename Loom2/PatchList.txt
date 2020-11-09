@@ -50,3 +50,4 @@ Relay
 Servo
 Stepper
 SetInterval
+WifiSetup

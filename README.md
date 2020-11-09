@@ -24,7 +24,63 @@
 * Some functionality (e.g. UDP communication) will only work on Max 8
 * The Z_ patches may not work or depend on non-default features in Max 8
 
+- - - -
 
+
+
+# Installation Guide
+## Download Max:
+Go to Cycling 74 and download the version for your operating system.
+
+Open Max 8 Application so the support folders you need to place the support files generate in your Documents folder.
+
+You may want to create an account for authorization
+
+## Download Loom Tools for Max:
+* Go to: [https://github.com/OPEnSLab-OSU/Max-Loom2](https://github.com/OPEnSLab-OSU/Max-Loom2)
+* Click the green button on the right to download the .zip of the repo.
+* Unzip
+
+Find these three folders:
+* Loom2
+* MPG
+* Optron
+
+Drag these folders into the following folder on your computer: 
+
+(User) > Documents > Max 8 > Library 
+
+## Download Java:
+Make sure java is installed, especially if you are a windows user. 
+
+Install Java here. [Java](https://www.java.com/en/download/manual.jsp)
+
+## Download Java Virtual Machine (JDK):
+Even if you installed Java above, you still need to do the following:
+In a google search, type in: "download oracle java"
+Click Java SE Downloads
+Look for Oracle JDK and click the JDK download link 
+Choose the operating system that matches your computer and download.
+[Direct Link](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
+
+## Download the FTDI VCP drivers (virtual com port)
+[ftdichip.com/drivers/vcp.htm](ftdichip.com/drivers/vcp.htm)
+
+Don't download the D2xx drivers.
+You only need to download the VCP drivers.
+(make sure to download the executable version for your opperating system)
+
+## Download Link Tools:
+* From the Max 8 application, look for the menu item > Package manager
+* Top right corner, type “link” in the search bar
+* Install Link by Cycling ‘74
+
+## reStart and reOpen Max 8:
+* Quit Max, you may need to restart your computer too.
+* Reopen Max8
+
+## Try Things Out:
+On your computer, Open (User) > Documents > Max 8 > Library > Loom2 > _DataProcessor.MPG.maxpat
 
 - - - -
 
