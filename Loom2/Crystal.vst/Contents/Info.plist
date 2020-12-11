@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Crystal</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Crystal 2.5.2.2 ©2012 Green Oak Software</string>
+	<key>CFBundleIconFile</key>
+	<string>SpecAU</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.greenoak.Atfr</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Crystal</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.5.2.2</string>
+	<key>CFBundleSignature</key>
+	<string>Atfr</string>
+	<key>CFBundleVersion</key>
+	<string>2.5.2.2</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>NSJavaNeeded</key>
+	<false/>
+	<key>VSTWindowCompositing</key>
+	<true/>
+</dict>
+</plist>
